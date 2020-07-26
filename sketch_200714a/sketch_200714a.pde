@@ -1,10 +1,3 @@
-// chilean sky
-// import the library
-import com.hamoid.*;
-
-// create a new VideoExport-object
-VideoExport videoExport;
-
 PShape mountains;
 float a;
 
@@ -35,10 +28,6 @@ void setup() {
   mountains.vertex(x, y);
   mountains.endShape(CLOSE);
   a = 135;
-  // Some settings
-  //videoExport = new VideoExport(this, "/Users/AndrewBryant/code/sketch_200714a/video.mp4");
-  //videoExport.setFrameRate(32);  
-  //videoExport.startMovie();
 }
 
 void draw() {
@@ -54,13 +43,4 @@ void draw() {
   a -= 0.5;
   fill(255);
   shape(mountains);
-  // Save a frame!
-  videoExport.saveFrame();
-}
-
-void keyPressed() {
-  if (key == 'q') {
-    videoExport.endMovie();
-    exit();
-  }
 }

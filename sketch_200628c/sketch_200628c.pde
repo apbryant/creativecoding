@@ -12,7 +12,4 @@ void draw() {
   shader.set("u_time", millis() / 1000.0);
   shader(shader);
   rect(0, 0, width, height);
-  //String dateString = year() + "_" + month() + "_" + day() + "_" + hour() + "_" + minute() + "_" + second();
-  //save(dateString + ".png");
-  //noLoop();
 }
