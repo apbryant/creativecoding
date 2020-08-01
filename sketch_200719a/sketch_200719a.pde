@@ -1,10 +1,4 @@
 PShader shader;
-// import the library
-// noisy flower-shaped thing
-import com.hamoid.*;
-
-// create a new VideoExport-object
-VideoExport videoExport;
 
 void setup() {
   size(640, 640, P2D);
