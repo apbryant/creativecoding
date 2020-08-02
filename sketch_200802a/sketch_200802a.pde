@@ -1,9 +1,4 @@
 PShader shader;
-// import the library
-import com.hamoid.*;
-
-// create a new VideoExport-object
-VideoExport videoExport;
 
 void setup() {
   size(640, 640, P2D);
@@ -17,4 +12,4 @@ void draw() {
   shader.set("u_time", millis() / 1000.0);
   shader(shader);
   rect(0,0,width,height);
-}
+} 
