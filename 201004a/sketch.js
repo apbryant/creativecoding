@@ -10,7 +10,7 @@ setup=_=>{
 		stroke(colors[int(random(colors.length))])
 		for(i=0;i<500;i++){
 			translate(oldx,oldy)
-			if(int(random(11))%2){
+			if(int(random(10))%2){
 				rotate(TAU/6)
 			} else {
 				rotate(-TAU/6)

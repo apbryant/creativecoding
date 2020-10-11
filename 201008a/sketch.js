@@ -1,6 +1,7 @@
 let unit;
 let colors;
-setup=_=>{
+draw=_=>{
+	frameRate(1)
 	createCanvas(w=windowWidth,h=windowHeight)
 	colors=shuffle(createCols("https://coolors.co/264653-2a9d8f-e9c46a-f4a261-e76f51"))
 	background(colors.pop())
@@ -19,7 +20,6 @@ setup=_=>{
 			push()
 			xoff=c%2==0?0:uw/2
 			translate(x+xoff,y)
-			// rotate(radians(x))
 			image(unit,0,0,uw,uh)
 			pop()
 			c++
@@ -38,7 +38,6 @@ setup=_=>{
 			c++
 		}
 	}
-	// saveCanvas()
 }
 drawUnit=(unit)=>{
 	unit.noStroke()
@@ -79,31 +78,7 @@ Triangle= function(center, sideLength,unit) {
 	this.br=new p5.Vector(brx,bry)
 	this.top=new p5.Vector(center.x, center.y - midLine/2);
 
-	this.recalculate=_=>{
-		midLine = sin(radians(60)) * this.l;
-    halfBottomLine = sqrt(this.l*this.l - midLine*midLine);
-    blx = c.x - halfBottomLine;
-    bly = c.y + midLine/2;
-    this.bl = new p5.Vector(blx, bly);
-    brx = c.x + halfBottomLine;
-    bry = c.y + midLine/2;
-    this.br = new p5.Vector(brx, bry);
-    this.top = new p5.Vector(c.x, c.y - midLine/2);
-	}
-
 	this.show=_=>{
 	   this.unit.triangle(this.bl.x, this.bl.y, this.top.x, this.top.y, this.br.x, this.br.y);
 	}
-	this.edges=_=> {
-    if (this.c.x > width) {
-      this.c.x = 0;
-    } else if (this.c.x < 0) {
-      this.c.x = width;
-    }
-    if (this.c.y > height) {
-      this.c.y = 0;
-    } else if (this.c.y < 0) {
-      this.c.y = height;
-    }
-  }
 }
