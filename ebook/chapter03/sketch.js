@@ -1,0 +1,30 @@
+setup=_=>{
+	createCanvas(w=800,w)
+	background(255)
+	stroke(0)
+	noFill()
+	a=0
+	r=301
+	ainc=0.1
+	rdec=0.02
+	oldx=w/2+cos(a)*r
+	oldy=w/2+sin(a)*r
+	a+=ainc
+	r-=rdec
+	while(r>0){
+		beginShape()
+		scl=0.004
+		m=30
+		nx=map(noise(r*scl,a*scl,oldx*scl),0,1,-m,m)//*0
+		ny=map(noise(r*scl,a*scl,oldy*scl),0,1,-m,m)//*0
+		x=(w/2+nx)+cos(a)*r
+		y=(w/2+ny)+sin(a)*r
+		vertex(oldx,oldy)
+		vertex(x,y)
+		endShape()
+		a+=ainc
+		r-=rdec
+		oldx=x
+		oldy=y
+	}
+}
