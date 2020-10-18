@@ -73,7 +73,6 @@ function draw() {
     translate(w/2,w/2)
     rotate(radians(360*i/n))
     tt=new Triangle2(new p5.Vector(0,0),600)
-    print(tt)
     let t = new Triangle(tt.bl.x,tt.bl.y,tt.top.x,tt.top.y,tt.br.x,tt.br.y);
     t.show();
     let v = int(random(10))

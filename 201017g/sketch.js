@@ -86,12 +86,10 @@ function draw() {
     x=cos(TAU*i/n)*r
     y=sin(TAU*i/n)*r
     tt=new Triangle2(new p5.Vector(x,y),400)
-    print(tt)
     let t = new Triangle(tt.bl.x,tt.bl.y,tt.top.x,tt.top.y,tt.br.x,tt.br.y);
     t.show();
     let v = int(random(5))
     t.recurse(v, 0);
     pop()
   }
-  saveCanvas()
 }

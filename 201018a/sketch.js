@@ -1,0 +1,15 @@
+t=0;draw=_=>{
+  createCanvas(w=600,w)
+  r=w
+  scl=0.003
+  while(r>0){
+    a=0
+    while(a<TAU){
+      inc=map(noise(a*scl,r*scl,t*scl),0,1,PI/10,PI/5)
+      if(noise(a*scl,r*scl,t*scl)<0.5)arc(w/2,w/2,r,r,a,a+inc)
+      a+=inc
+      t+=0.005
+    }
+    r-=3
+  }
+}
