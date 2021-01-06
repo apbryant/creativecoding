@@ -1,0 +1,6 @@
+C:\coding_muse\ClearDownloadsFolder\ClearDownloadsFolder\bin\Debug\ClearDownloadsFolder.exe.config
+C:\coding_muse\ClearDownloadsFolder\ClearDownloadsFolder\bin\Debug\ClearDownloadsFolder.exe
+C:\coding_muse\ClearDownloadsFolder\ClearDownloadsFolder\bin\Debug\ClearDownloadsFolder.pdb
+C:\coding_muse\ClearDownloadsFolder\ClearDownloadsFolder\obj\Debug\ClearDownloadsFolder.csprojResolveAssemblyReference.cache
+C:\coding_muse\ClearDownloadsFolder\ClearDownloadsFolder\obj\Debug\ClearDownloadsFolder.exe
+C:\coding_muse\ClearDownloadsFolder\ClearDownloadsFolder\obj\Debug\ClearDownloadsFolder.pdb

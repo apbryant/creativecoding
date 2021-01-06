@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:gravity="bottom">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		
+		android:id="@+id/addNameLinearLayout">
+		<TextView
+			android:text="Name: "
+			android:textSize="32dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:id="@+id/addNameTextView" />
+		<EditText
+			android:singleLine="false"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:id="@+id/addNameEditText"/>
+	</LinearLayout>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/addUnitPriceLinearLayout">
+		<TextView
+			android:text="Price: "
+			android:textSize="32dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:inputType="number"
+			android:id="@+id/addUnitPriceTextView" />
+		<EditText
+			android:singleLine="false"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:inputType="number"
+			android:id="@+id/addPriceEditText"/>
+	</LinearLayout>
+	<Button
+		android:text="add"
+		android:textSize="32dp"
+		android:layout_width="match_parent"
+		android:layout_height="100dp"
+		android:id="@+id/addItemButton" />
+</LinearLayout>
