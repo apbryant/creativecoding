@@ -8,11 +8,13 @@
   (:import [org.apache.commons.math3.distribution ParetoDistribution])
   (:import [processing.core PShape PGraphics]))
 
-  (defn setup [])
-  (defn draw []
-    (no-loop)
-    (color-mode :hsb 360 100 100 1.0)
-    (background 100 0 100)
-    (fill 100 0 100)
-    (stroke 100 0 0)
-    (save "sketch.tif"))
+(def img (ref nil))
+(defn setup [])
+(defn draw []
+  (no-loop)
+  (color-mode :hsb 360 100 100 1.0)
+  (background 100 0 100)
+  (fill 100 0 0)
+  (no-stroke)
+  (ellipse (/ (width) 2) (/ (height) 2) (/ (width) 4) (/ (height) 4))
+  (save "sketch.png"))

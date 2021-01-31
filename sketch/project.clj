@@ -5,7 +5,7 @@
                  [quil "2.2.4" :exclusions [org.clojure/clojure]]
                  [org.apache.commons/commons-math3 "3.3"]
                  [incanter "1.5.5"]]
-  :jvm-opts ["-Xms1100m" "-Xmx1100M" "-server"]
+  :jvm-opts ["-Xms5000m" "-Xmx5000M" "-server"]
   :main ^:skip-aot sketch.core
   :source-paths ["src/clj"]
   :java-source-paths ["src/java"]
