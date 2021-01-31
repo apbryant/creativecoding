@@ -70,17 +70,17 @@
   (let [noise-scale 0.03
         t (atom 0)
         t-inc 0.01
-        n-cols 50
+        n-cols 5
         col-width (/ (width) n-cols)
-        n-rows 5
+        n-rows 10
         row-width (/ (height) n-rows)]
 
     (doseq [y (range n-rows)]
       (doseq [x (range n-cols)]
         (let [sx (* x col-width)
               sy (* y row-width)
-              dx (+ sx (generate-wave pow 500 cos sx 30))
-              dy (+ sy (generate-wave * 70 sin sy 50))]
+              dx (+ sx (generate-wave pow 50 cos sx 30))
+              dy (+ sy (generate-wave pow 70 sin sy 10))]
 
           (copy [sx sy col-width row-width] [dx dy col-width row-width])
           (swap! t (fn [n] (+ n t-inc)))))))
