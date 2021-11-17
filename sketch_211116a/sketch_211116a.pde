@@ -12,8 +12,8 @@ void setup() {
   //videoExport.setFrameRate(30);
   //videoExport.startMovie();
   size(900, 900);
-  background(0);
-  fill(255);
+  background(255);
+  fill(0);
   noStroke();
   float a = 7.460008484604781; // set to random(N) for more variety! e.g., random(10)
   float b = 2.428597966576768; // set to random(N) for more variety! e.g., random(10)
@@ -31,7 +31,7 @@ float magnitude = 500;
 int j = 1;
 
 void draw() {
-  background(0);
+  background(255);
   pushMatrix();
   translate(width/2, height/2);
   PVector[] subarray = Arrays.copyOfRange(pts, 0, j);
