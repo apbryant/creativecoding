@@ -41,6 +41,8 @@ void draw() {
     curveVertex(subarray[i].x, subarray[i].y);
     //videoExport.saveFrame();
   }
+  endShape();
+  popMatrix();
   
   if (j == pts.length) {
     //videoExport.endMovie();
@@ -49,8 +51,7 @@ void draw() {
     j++;
   }
   
-  endShape();
-  popMatrix();
+  
 }
 
 void keyPressed() {
