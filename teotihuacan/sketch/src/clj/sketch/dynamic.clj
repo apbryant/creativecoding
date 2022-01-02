@@ -3,8 +3,6 @@
 
 (defn square [x y side-length]
   (rect x y side-length side-length))
-(defn width-perc [perc] (* (width) perc))
-(defn height-perc [perc] (* (height) perc))
 
 (defn square-grid [tx ty w h cd md]
   (let [n (int (random 1 4))
