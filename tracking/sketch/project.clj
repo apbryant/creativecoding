@@ -1,5 +1,5 @@
 (defproject sketch "1.0"
-  :description "Teotihuacan"
+  :description "Tracking"
   :dependencies [[org.clojure/clojure "1.10.1"]
                  [org.clojure/clojure-contrib "1.2.0"]
                  [quil "2.2.4" :exclusions [org.clojure/clojure]]]

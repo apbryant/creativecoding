@@ -6,7 +6,7 @@
   [& args])
 
 (q/defsketch example
-  :title "Teotihuacan"
+  :title "Tracking"
   :setup dynamic/setup
   :draw dynamic/draw
   :size [600 600])
