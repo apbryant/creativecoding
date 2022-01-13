@@ -1,5 +1,3 @@
-import java.util.UUID;
-
 void setup() {
   size(600, 600);
 }
