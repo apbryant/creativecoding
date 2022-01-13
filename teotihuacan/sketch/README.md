@@ -1,44 +1,11 @@
-# sketch
+## Description
 
-FIXME: description
+I made this sketch thinking about Teotihuacan, an ancient city close to what's now Mexico City. I'd read about it in The Dawn of Everything and I wanted to make something inspired by the city's diagram in the book.
 
-## Installation
+In this sketch I create grids of squares. I split the canvas into a grid. Each grid cell can be further divided into its own grid until a maximum depth is reached. For each grid cell I decide whether to divide it further, or show a square in that grid cell's space.
 
-Download from http://example.com/FIXME.
+I choose between a range of random integers to decide how many cells a new grid should have. This offsets the grid lines, making the sketch a little more dynamic and less monotonous.
 
-## Usage
+The sketch uses black and gray. Because the cells have the same color, the join together into some neat shapes. It also reminded me of the stone ruins of a city lost to time.
 
-FIXME: explanation
-
-    $ java -jar sketch-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2020 FIXME
-
-This program and the accompanying materials are made available under the
-terms of the Eclipse Public License 2.0 which is available at
-http://www.eclipse.org/legal/epl-2.0.
-
-This Source Code may also be made available under the following Secondary
-Licenses when the conditions for such availability set forth in the Eclipse
-Public License, v. 2.0 are satisfied: GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or (at your
-option) any later version, with the GNU Classpath Exception which is available
-at https://www.gnu.org/software/classpath/license.html.
+More at https://www.andrewpaulbryant.com/posts/teotihuacan
